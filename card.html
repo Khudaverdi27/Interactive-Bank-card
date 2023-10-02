@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="purpleBox">
+            <div class="images">
+                <img src="images/bg-card-front.png" alt="" class="cardFront">
+                <img src="images/card-logo.svg" alt="" class="cardLogo">
+                <img src="images/bg-card-back.png" alt="" class="cardBack">
+            </div>
+
+            <h3 class="cardNum">0000 0000 0000 0000</h3>
+            <div class="cardHolder">
+                <p class="cardName">Jane Appleseed</p>
+                <p><span class="cardDate">00</span> / <span class="cardDate2">00</span></p>
+            </div>
+            <span class="cardCvc">000</span>
+        </div>
+        <div class="whiteBox">
+            <form action="" class="grid-container ">
+                <label for="" class="errorClass cardHolderLabel">CARDHOLDER NAME
+                    <input type="text" class=" cardHolderInput" maxlength="30" placeholder="e.g Jane Appleseed">
+                    <p class="error_message "></p>
+                </label>
+                <label for="" class=" cardNumberLabel">CARD NUMBER
+                    <input type="text" class=" cardNumberInput" maxlength="16" placeholder="e.g 1234 5678 9101 0000">
+                    <p class="error_message errornumb"></p>
+                </label>
+                <label for="">EXP:MM
+                    <input type="text" class="expMonth" maxlength="2" placeholder="MM">
+                    <p class="error_message errorexp"></p>
+                </label>
+                <label for="">YY
+                    <input type="text" class="expYear " maxlength="2" placeholder="YY">
+                    <p class="error_message erroryear "></p>
+                </label>
+                <label for="">CVC
+                    <input type="text" class="cvcInput" maxlength="3" placeholder="e.g 123">
+                    <p class="error_message errorcvc"></p>
+                </label>
+                <input type="submit" value="Confirm" class="submitForm">
+            </form>
+            <div class="compelete">
+                <img src="images/icon-complete.svg" alt="">
+                <h2>THANK YOU</h2>
+                <p>We've added your card details</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="card.js"></script>
+</body>
+
+</html>
